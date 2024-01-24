@@ -1,31 +1,41 @@
 <!DOCTYPE html>
-<html style="background-color: #0097a7ff;">
+<html>
 <head>
     <title>allygn</title>
     <style>
-        /* CSS to center the logo both vertically and horizontally */
+        /* CSS to center the content */
         body, html {
             height: 100%;
+            background-color: #0097a7ff;"
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column; /* Aligns items vertically */
+            text-align: center; /* Centers text horizontally */
         }
+
         /* Style for the tagline */
         .tagline {
-            font-size: 12px; /* Font size */
-            font-family: Helvetica, Arial, sans-serif; /* Font preference */
-            color: #333; /* Text color */
+            font-size: 20px; /* Font size */
+            color: #414141; /* Text color */
             margin-top: 20px; /* Space between logo and tagline */
+            font-family: Helvetica, Arial, sans-serif; /* Font preference */
+        }
+
+        img {
+            display: block; /* Ensures the image doesn't have inline properties */
+            margin: 0 auto; /* Centers the image */
+            width: 30%;
         }
     </style>
 </head>
 <body>
 
     <!-- Logo Image -->
-    <img src="allygn-logo-transparent.png" style="width: 30%;" alt="allygn logo">
+    <img src="allygn-logo-transparent.png" alt="allygn logo">
 
      <!-- Tagline Text -->
-    <p class="tagline"></p>
+    <p class="tagline">Understand your communities. Find allies. Effect change.</p>
 </body>
 </html>
